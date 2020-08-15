@@ -12,7 +12,7 @@ git_dirty() {
   then
     echo ""
   else
-    if [[ $st == "nothing to commit, working directory clean" ]]
+    if [[ $st == "nothing to commit, working tree clean" ]]
     then
       echo "on %{$fg_bold[green]%}$(git_prompt_info_jofi)%{$reset_color%}"
     else
